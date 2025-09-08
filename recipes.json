@@ -1,0 +1,37 @@
+{
+  "Frukost": [
+    {
+      "title": "Krispig äggmacka",
+      "ingredients": [
+        "2 ägg",
+        "1 skiva surdegsbröd",
+        "1 msk smör",
+        "Salt, peppar, MSG",
+        "1 tsk crispy chili oil"
+      ],
+      "steps": [
+        "Rosta brödet.",
+        "Stek äggen på hög värme, sänk sedan och vänd kort.",
+        "Krydda med salt, peppar och MSG.",
+        "Toppa med crispy chili oil och lägg på brödet."
+      ]
+    }
+  ],
+  "Middag": [
+    {
+      "title": "Pasta med tomatsås",
+      "ingredients": [
+        "250 g pasta",
+        "2 dl hemkokt tomatsås",
+        "1 msk olivolja",
+        "Parmesan"
+      ],
+      "steps": [
+        "Koka pastan al dente.",
+        "Värm tomatsåsen i kastrull.",
+        "Blanda pasta och sås, ringla olja.",
+        "Toppa med parmesan."
+      ]
+    }
+  ]
+}
