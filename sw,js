@@ -1,23 +1,18 @@
-const CACHE_NAME = "kokbok-cache-v1";
-const FILES_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/app.css",
-  "/app.js",
-  "/recipes.json",
-  "/logo.svg",
-  "/icon-192.png",
-  "/icon-512.png"
+const CACHE = 'kokbok-v1';
+const ASSETS = [
+  './',
+  './index.html',
+  './app.css',
+  './app.js',
+  './recipes.json',
+  './manifest.json',
+  './logo.svg',
+  './icon-192.png',
+  './icon-512.png'
 ];
-
-self.addEventListener("install", e => {
-  e.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(FILES_TO_CACHE))
-  );
+self.addEventListener('install', e => {
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
 });
-
-self.addEventListener("fetch", e => {
-  e.respondWith(
-    caches.match(e.request).then(resp => resp || fetch(e.request))
-  );
+self.addEventListener('fetch', e => {
+  e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
 });
